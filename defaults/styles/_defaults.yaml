@@ -1,0 +1,95 @@
+# Default Style Overlays
+# Styles are lightweight "mood" modifiers applied on top of brands
+
+minimal:
+  name: minimal
+  display_name: "Minimal"
+  description: "Clean, understated, focused on content"
+  animation:
+    speed_multiplier: 1.0
+    easing_override: null
+    particles: false
+  pacing:
+    wpm_adjustment: 0
+    transition_speed: normal
+  graphics:
+    effects: []
+
+energetic:
+  name: energetic
+  display_name: "Energetic"
+  description: "Dynamic, fast-paced, attention-grabbing"
+  animation:
+    speed_multiplier: 1.3
+    easing_override: spring
+    particles: true
+  pacing:
+    wpm_adjustment: 20
+    transition_speed: fast
+  graphics:
+    effects:
+      - glow
+      - motion-blur
+
+corporate:
+  name: corporate
+  display_name: "Corporate"
+  description: "Professional, trustworthy, polished"
+  animation:
+    speed_multiplier: 0.9
+    easing_override: ease-in-out
+    particles: false
+  pacing:
+    wpm_adjustment: -10
+    transition_speed: slow
+  graphics:
+    effects:
+      - subtle-shadow
+
+playful:
+  name: playful
+  display_name: "Playful"
+  description: "Fun, engaging, personality-forward"
+  animation:
+    speed_multiplier: 1.1
+    easing_override: bounce
+    particles: true
+  pacing:
+    wpm_adjustment: 10
+    transition_speed: normal
+  graphics:
+    effects:
+      - pop
+      - wiggle
+
+dramatic:
+  name: dramatic
+  display_name: "Dramatic"
+  description: "High impact, cinematic, powerful"
+  animation:
+    speed_multiplier: 0.8
+    easing_override: ease-out
+    particles: false
+  pacing:
+    wpm_adjustment: -20
+    transition_speed: slow
+  graphics:
+    effects:
+      - vignette
+      - high-contrast
+
+technical:
+  name: technical
+  display_name: "Technical"
+  description: "Precise, detailed, developer-focused"
+  animation:
+    speed_multiplier: 1.0
+    easing_override: linear
+    particles: false
+  pacing:
+    wpm_adjustment: -15
+    transition_speed: normal
+  graphics:
+    effects:
+      - code-highlight
+      - grid-overlay

@@ -1,0 +1,108 @@
+# Default Platform Profiles
+# These define technical constraints and pacing for each platform
+
+youtube:
+  name: youtube
+  display_name: "YouTube"
+  aspect_ratio: "16:9"
+  resolution:
+    width: 1920
+    height: 1080
+  duration:
+    max_seconds: null  # unlimited
+    recommended_seconds: "480-900"  # 8-15 min
+  fps: 30
+  pacing: normal
+  safe_zones: null
+  chunking:
+    enabled: false
+
+youtube-short:
+  name: youtube-short
+  display_name: "YouTube Shorts"
+  aspect_ratio: "9:16"
+  resolution:
+    width: 1080
+    height: 1920
+  duration:
+    max_seconds: 60
+    recommended_seconds: "30-45"
+  fps: 30
+  pacing: fast
+  safe_zones:
+    top: 120
+    bottom: 100
+  chunking:
+    enabled: true
+    overlap_seconds: 2
+
+tiktok:
+  name: tiktok
+  display_name: "TikTok"
+  aspect_ratio: "9:16"
+  resolution:
+    width: 1080
+    height: 1920
+  duration:
+    max_seconds: 180
+    recommended_seconds: "15-60"
+  fps: 30
+  pacing: fast
+  safe_zones:
+    top: 150
+    bottom: 120
+  chunking:
+    enabled: true
+    overlap_seconds: 2
+
+instagram-reel:
+  name: instagram-reel
+  display_name: "Instagram Reels"
+  aspect_ratio: "9:16"
+  resolution:
+    width: 1080
+    height: 1920
+  duration:
+    max_seconds: 90
+    recommended_seconds: "15-30"
+  fps: 30
+  pacing: fast
+  safe_zones:
+    top: 120
+    bottom: 100
+  chunking:
+    enabled: true
+    overlap_seconds: 2
+
+instagram-story:
+  name: instagram-story
+  display_name: "Instagram Story"
+  aspect_ratio: "9:16"
+  resolution:
+    width: 1080
+    height: 1920
+  duration:
+    max_seconds: 60
+    recommended_seconds: "15-30"
+  fps: 30
+  pacing: fast
+  safe_zones:
+    top: 100
+    bottom: 80
+
+linkedin:
+  name: linkedin
+  display_name: "LinkedIn"
+  aspect_ratio: "16:9"
+  resolution:
+    width: 1920
+    height: 1080
+  duration:
+    max_seconds: 600
+    recommended_seconds: "60-180"
+  fps: 30
+  pacing: normal
+  safe_zones: null
+  captions_required: true
+  chunking:
+    enabled: false

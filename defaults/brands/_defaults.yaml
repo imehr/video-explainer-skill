@@ -1,0 +1,108 @@
+# Default Brand Template
+# Copy and customize for your brand
+
+_template:
+  name: my-brand
+  display_name: "My Brand"
+  version: "1.0"
+
+  # === VOICE & CONTENT ===
+  voice:
+    tone: professional-friendly  # professional, casual, academic, playful
+    personality:
+      - authoritative
+      - approachable
+      - concise
+    writing_style:
+      sentence_length: medium   # short, medium, long
+      vocabulary: technical     # simple, technical, academic
+      perspective: first-plural # "we explain" vs "this video explains"
+    forbidden_words: []
+    preferred_phrases: []
+
+  # === VISUAL IDENTITY ===
+  colors:
+    primary: "#00d9ff"
+    secondary: "#ff6b35"
+    accent: "#00ff88"
+    background:
+      dark: "#0a0a1a"
+      light: "#f5f5f7"
+    semantic:
+      success: "#00ff88"
+      warning: "#ffcc00"
+      error: "#ff4757"
+      info: "#00d9ff"
+
+  typography:
+    scale: 1.25
+    fonts:
+      display: "Outfit"
+      heading: "Inter"
+      body: "Inter"
+      code: "JetBrains Mono"
+    weights:
+      heading: 700
+      body: 400
+      emphasis: 600
+
+  # === GRAPHIC SYSTEM ===
+  graphics:
+    corner_radius: 12
+    border_width: 2
+    shadow_style: glow      # none, subtle, glow, hard
+    icon_style: outlined    # outlined, filled, duotone
+
+  animation:
+    default_easing: ease-out
+    default_duration: 0.3
+    entrance: fade-up
+    exit: fade-down
+
+  # === ASSETS ===
+  assets:
+    logo:
+      primary: null         # path to logo file
+      monochrome: null
+      position: top-right
+    watermark:
+      enabled: false
+      opacity: 0.2
+    intro_animation: null
+    outro_animation: null
+
+  # === EXTENSIBILITY ===
+  extends: null
+  custom: {}
+
+# Example minimal brand
+minimal:
+  name: minimal
+  display_name: "Minimal Default"
+  version: "1.0"
+
+  voice:
+    tone: professional-friendly
+    personality: [clear, concise]
+    writing_style:
+      sentence_length: short
+      vocabulary: simple
+      perspective: first-plural
+
+  colors:
+    primary: "#3b82f6"
+    secondary: "#8b5cf6"
+    accent: "#10b981"
+    background:
+      dark: "#111827"
+      light: "#f9fafb"
+
+  typography:
+    fonts:
+      heading: "Inter"
+      body: "Inter"
+      code: "JetBrains Mono"
+
+  graphics:
+    corner_radius: 8
+    shadow_style: subtle

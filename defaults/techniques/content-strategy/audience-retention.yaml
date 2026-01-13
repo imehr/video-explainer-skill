@@ -1,0 +1,82 @@
+# Audience Retention Techniques
+# Strategies for keeping viewers engaged throughout the video
+
+name: audience-retention
+description: Techniques to maximize viewer watch time
+
+techniques:
+  - id: pattern-interrupt
+    description: "Visual or auditory change to reset attention"
+    frequency: "every 30-60 seconds"
+    examples:
+      - change_camera_angle
+      - insert_b_roll
+      - add_sound_effect
+      - change_background_color
+      - zoom_effect
+    effectiveness: high
+
+  - id: open-loops
+    description: "Tease upcoming content to create anticipation"
+    when_to_use:
+      - intro
+      - before_complex_section
+      - mid_video
+    examples:
+      - "In a moment, I'll show you the technique that changed everything"
+      - "But first, we need to understand..."
+      - "Stick around for the surprising result"
+    effectiveness: high
+
+  - id: progress-indicators
+    description: "Show viewers where they are in the content"
+    implementation:
+      - chapter_markers
+      - progress_bar_overlay
+      - numbered_steps
+      - "Step 3 of 5" text
+    best_for:
+      - tutorials
+      - long-form
+      - step-by-step
+
+  - id: payoff-reminder
+    description: "Remind viewers what they'll get by watching"
+    frequency: "every 2-3 minutes for long-form"
+    examples:
+      - "By the end of this video, you'll be able to..."
+      - "This is exactly what lets us achieve..."
+    effectiveness: medium
+
+  - id: curiosity-gaps
+    description: "Present questions without immediate answers"
+    implementation:
+      - rhetorical_questions
+      - "You might wonder why..."
+      - "This seems wrong, but..."
+    effectiveness: high
+
+  - id: visual-variety
+    description: "Vary visual presentation to maintain interest"
+    elements:
+      - diagrams
+      - code_snippets
+      - animations
+      - screen_recordings
+      - face_cam
+    rule: "No single visual type for more than 30 seconds"
+
+platform_specific:
+  youtube:
+    critical_moments:
+      - first_30_seconds: "Establish value and hook"
+      - first_3_minutes: "Algorithm evaluation window"
+      - midpoint: "Re-engage with pattern interrupt"
+
+  short_form:
+    critical_moments:
+      - first_second: "Hook or lose them"
+      - every_5_seconds: "New visual element"
+      - loop_point: "Seamless ending for re-watch"
+
+last_updated: 2026-01-13

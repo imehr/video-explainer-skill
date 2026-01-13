@@ -1,0 +1,82 @@
+# Storytelling Hooks
+# Opening techniques for video explainers
+
+name: hooks
+description: Techniques for grabbing attention in first 5 seconds
+
+techniques:
+  - id: provocative-question
+    description: "Ask something counterintuitive that challenges assumptions"
+    template: "What if I told you {surprising_fact}?"
+    when_to_use:
+      - myth-busting
+      - surprising-insights
+      - technical-content
+    platforms:
+      - youtube
+      - linkedin
+    effectiveness_score: 0.85
+
+  - id: bold-claim
+    description: "State a surprising fact or result upfront"
+    template: "This {change} made {result}"
+    when_to_use:
+      - case-studies
+      - tutorials
+      - optimizations
+    platforms:
+      - all
+    effectiveness_score: 0.78
+
+  - id: pain-point
+    description: "Describe a relatable frustration"
+    template: "Ever spent {time} on {task} only to {frustrating_result}?"
+    when_to_use:
+      - problem-solving
+      - tutorials
+      - developer-content
+    platforms:
+      - youtube
+      - youtube-short
+      - tiktok
+    effectiveness_score: 0.82
+
+  - id: visual-hook
+    description: "Start with striking visual, minimal narration"
+    template: null  # No text template, purely visual
+    when_to_use:
+      - short-form
+      - visual-heavy
+      - transformations
+    platforms:
+      - tiktok
+      - instagram-reel
+      - youtube-short
+    effectiveness_score: 0.91
+
+  - id: cold-open
+    description: "Jump straight into the action, no intro"
+    template: null
+    when_to_use:
+      - quick-tips
+      - demonstrations
+      - tutorials
+    platforms:
+      - tiktok
+      - youtube-short
+    effectiveness_score: 0.87
+
+selection_rules:
+  - platform: [tiktok, youtube-short, instagram-reel]
+    prefer: [visual-hook, cold-open, pain-point]
+  - platform: [youtube]
+    prefer: [provocative-question, pain-point]
+  - platform: [linkedin]
+    prefer: [bold-claim, provocative-question]
+  - content_type: [case-study]
+    prefer: [bold-claim]
+  - content_type: [tutorial]
+    prefer: [pain-point, cold-open]
+
+last_updated: 2026-01-13
+learned_from_projects: []

@@ -1,0 +1,97 @@
+# Narrative Structures
+# Story arc patterns for video explainers
+
+name: narrative-structures
+description: Story structure patterns for organizing video content
+
+structures:
+  - id: problem-solution
+    description: "Present problem, build tension, reveal solution"
+    stages:
+      - hook: "Problem teaser"
+      - problem: "Deep dive into the problem"
+      - failed_approaches: "What doesn't work (optional)"
+      - solution_intro: "Introduce the solution"
+      - solution_explain: "Explain how it works"
+      - results: "Show proof/results"
+      - cta: "Call to action"
+    duration_range: "any"
+    when_to_use:
+      - tutorials
+      - case-studies
+      - technical-explanations
+
+  - id: concept-ladder
+    description: "Build understanding progressively, concepts enabling next"
+    stages:
+      - hook: "End result preview"
+      - foundation: "Base concept"
+      - building_block_1: "First layer"
+      - building_block_2: "Second layer"
+      - synthesis: "How they combine"
+      - advanced: "Advanced application"
+      - recap: "Summary + CTA"
+    duration_range: "5+ min"
+    when_to_use:
+      - complex-technical
+      - educational
+      - deep-dives
+
+  - id: before-after
+    description: "Show transformation, then explain how"
+    stages:
+      - hook: "Dramatic 'after'"
+      - before: "Starting state"
+      - change: "The intervention"
+      - process: "Step by step"
+      - after: "Detailed result"
+      - why: "Why it works"
+      - cta: "Call to action"
+    duration_range: "any"
+    when_to_use:
+      - transformations
+      - optimizations
+      - tutorials
+
+  - id: myth-busting
+    description: "Challenge common beliefs, reveal truth"
+    stages:
+      - hook: "Provocative question"
+      - belief: "Common belief"
+      - why_believed: "Why people believe it"
+      - reality: "The actual truth"
+      - evidence: "Proof"
+      - implications: "What this means"
+      - cta: "Call to action"
+    duration_range: "3-10 min"
+    when_to_use:
+      - misconceptions
+      - thought-leadership
+      - surprising-insights
+
+  - id: quick-tip
+    description: "Single actionable insight, no fluff"
+    stages:
+      - hook: "Visual or verbal hook"
+      - tip: "The tip itself"
+      - demo: "Quick demonstration"
+      - result: "What you get"
+    duration_range: "< 60s"
+    when_to_use:
+      - short-form
+      - tips
+      - quick-wins
+
+selection_rules:
+  - duration: "< 60s"
+    prefer: [quick-tip, before-after]
+  - duration: "1-5 min"
+    prefer: [problem-solution, before-after]
+  - duration: "5+ min"
+    prefer: [concept-ladder, problem-solution]
+  - complexity: high
+    prefer: [concept-ladder]
+  - content_type: [case-study]
+    prefer: [before-after, problem-solution]
+
+last_updated: 2026-01-13

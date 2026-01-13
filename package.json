@@ -1,0 +1,43 @@
+{
+  "name": "video-explainer-skill",
+  "version": "0.1.0",
+  "description": "Claude Code skill and agent for creating multi-platform explainer videos",
+  "author": "imehr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imehr/video-explainer-skill"
+  },
+  "keywords": [
+    "claude-code",
+    "skill",
+    "plugin",
+    "video",
+    "explainer",
+    "content-creation"
+  ],
+  "files": [
+    "skill/",
+    "plugin/dist/",
+    "defaults/",
+    "install.sh",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "cd plugin && npm run build",
+    "install-skill": "./install.sh"
+  },
+  "claude-code": {
+    "type": "skill-plugin",
+    "skill": "skill/video.md",
+    "plugin": "plugin/dist/index.js",
+    "requires": {
+      "external": [
+        {
+          "name": "video_explainer",
+          "install": "pip install -e <repo>"
+        }
+      ]
+    }
+  }
+}
