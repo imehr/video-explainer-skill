@@ -241,7 +241,7 @@ export class ConfigLoader {
   }
 
   // Simple YAML writer (placeholder - use yaml library in production)
-  private toSimpleYaml(obj: Record<string, unknown>): string {
+  private toSimpleYaml(obj: GlobalConfig): string {
     // This is a simplified placeholder
     // In production, use the yaml package
     return JSON.stringify(obj, null, 2);
