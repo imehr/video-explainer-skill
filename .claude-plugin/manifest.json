@@ -1,0 +1,59 @@
+{
+  "name": "video-explainer-skill",
+  "version": "0.1.0",
+  "displayName": "Video Explainer",
+  "description": "Create multi-platform explainer videos (YouTube, Shorts, TikTok, Instagram, LinkedIn) with intelligent orchestration and learning memory",
+  "author": "Mehran Mozaffari <mehran.mozaffari@gmail.com>",
+  "repository": "https://github.com/imehr/video-explainer-skill",
+  "license": "MIT",
+  "marketplace": "imehr/imehr-marketplace",
+  "skills_directory": "skill",
+  "categories": [
+    "content-creation",
+    "video",
+    "automation"
+  ],
+  "skills": [
+    {
+      "name": "video",
+      "category": "content-creation",
+      "path": "skill/video.md",
+      "description": "Create multi-platform explainer videos with intelligent orchestration",
+      "version": "0.1.0",
+      "triggers": ["/video"]
+    }
+  ],
+  "techniques": [
+    {
+      "name": "hooks",
+      "path": "skill/techniques/hooks.md",
+      "description": "Opening techniques for video explainers"
+    },
+    {
+      "name": "narrative",
+      "path": "skill/techniques/narrative.md",
+      "description": "Story structure patterns"
+    },
+    {
+      "name": "platform-optimization",
+      "path": "skill/techniques/platform-optimization.md",
+      "description": "Platform-specific optimization tips"
+    }
+  ],
+  "requires": {
+    "external": [
+      {
+        "name": "video_explainer",
+        "description": "Python CLI tool for video generation",
+        "install": "pip install -e <video_explainer_repo>"
+      }
+    ]
+  },
+  "features": [
+    "Multi-platform output (YouTube, Shorts, TikTok, Instagram, LinkedIn)",
+    "Brand × Platform × Style configuration matrix",
+    "Intelligent orchestrator with parallel agent execution",
+    "Learning memory system",
+    "Technique skills for storytelling and content strategy"
+  ]
+}
