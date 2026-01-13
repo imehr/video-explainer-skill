@@ -1,0 +1,13 @@
+{
+  "name": "video-explainer-skill",
+  "description": "Create multi-platform explainer videos with intelligent orchestration and learning memory",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mehran Mozaffari",
+    "email": "mehran.mozaffari@gmail.com"
+  },
+  "homepage": "https://github.com/imehr/video-explainer-skill",
+  "repository": "https://github.com/imehr/video-explainer-skill",
+  "license": "MIT",
+  "keywords": ["video", "explainer", "content-creation", "youtube", "tiktok", "multi-platform"]
+}
